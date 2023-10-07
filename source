@@ -1,0 +1,319 @@
+local v67 = game.CoreGui:FindFirstChild("PlayerPosition")
+if v67 then
+	local preventLag = Instance.new("Message")
+	preventLag.Parent = game.CoreGui
+	preventLag.Text = 'Do not click again, already executed...'
+	wait(3)
+	preventLag:Destroy()
+	v67:Destroy()
+end
+
+local Converted = {
+	["_PlayerPosition"] = Instance.new("ScreenGui");
+	["_Frame"] = Instance.new("Frame");
+	["_X"] = Instance.new("TextLabel");
+	["_LocalScript"] = Instance.new("LocalScript");
+	["_hoveronX"] = Instance.new("TextLabel");
+	["_LocalScript1"] = Instance.new("LocalScript");
+	["_Y"] = Instance.new("TextLabel");
+	["_hoveronY"] = Instance.new("TextLabel");
+	["_LocalScript2"] = Instance.new("LocalScript");
+	["_LocalScript3"] = Instance.new("LocalScript");
+	["_Z"] = Instance.new("TextLabel");
+	["_hoveronZ"] = Instance.new("TextLabel");
+	["_LocalScript4"] = Instance.new("LocalScript");
+	["_LocalScript5"] = Instance.new("LocalScript");
+	["_LocalScript6"] = Instance.new("LocalScript");
+	["_Shadow"] = Instance.new("ImageLabel");
+	["_Vers"] = Instance.new("TextLabel");
+}
+
+Converted["_PlayerPosition"].Name = "PlayerPosition"
+
+Converted["_Frame"].BackgroundColor3 = Color3.fromRGB(65.0000037252903, 65.0000037252903, 65.0000037252903)
+Converted["_Frame"].BorderSizePixel = 0
+Converted["_Frame"].Position = UDim2.new(0.0189999994, 0, 0.922999978, 0)
+Converted["_Frame"].Size = UDim2.new(0.222222224, 0, 0.047169812, 0)
+Converted["_Frame"].Parent = Converted["_PlayerPosition"]
+
+Converted["_X"].Font = Enum.Font.Unknown
+Converted["_X"].Text = "X"
+Converted["_X"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_X"].TextScaled = true
+Converted["_X"].TextSize = 14
+Converted["_X"].TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_X"].TextWrapped = true
+Converted["_X"].BackgroundColor3 = Color3.fromRGB(55.000004321336746, 55.000004321336746, 55.000004321336746)
+Converted["_X"].BorderMode = Enum.BorderMode.Middle
+Converted["_X"].Size = UDim2.new(0.300000012, 0, 1, 0)
+Converted["_X"].Name = "X"
+Converted["_X"].Parent = Converted["_Frame"]
+
+Converted["_hoveronX"].Font = Enum.Font.Roboto
+Converted["_hoveronX"].Text = "X"
+Converted["_hoveronX"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_hoveronX"].TextScaled = true
+Converted["_hoveronX"].TextSize = 14
+Converted["_hoveronX"].TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_hoveronX"].TextStrokeTransparency = 0.699999988079071
+Converted["_hoveronX"].TextWrapped = true
+Converted["_hoveronX"].BackgroundColor3 = Color3.fromRGB(55.000004321336746, 55.000004321336746, 55.000004321336746)
+Converted["_hoveronX"].BackgroundTransparency = 1
+Converted["_hoveronX"].BorderMode = Enum.BorderMode.Middle
+Converted["_hoveronX"].Position = UDim2.new(0.30565843, 0, -0.788000464, 0)
+Converted["_hoveronX"].Size = UDim2.new(0, 20, 0, 20)
+Converted["_hoveronX"].Visible = false
+Converted["_hoveronX"].Name = "hoveronX"
+Converted["_hoveronX"].Parent = Converted["_X"]
+
+Converted["_Y"].Font = Enum.Font.Unknown
+Converted["_Y"].Text = "Y"
+Converted["_Y"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Y"].TextScaled = true
+Converted["_Y"].TextSize = 14
+Converted["_Y"].TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Y"].TextWrapped = true
+Converted["_Y"].BackgroundColor3 = Color3.fromRGB(55.000004321336746, 55.000004321336746, 55.000004321336746)
+Converted["_Y"].BorderMode = Enum.BorderMode.Middle
+Converted["_Y"].Position = UDim2.new(0.346666813, 0, 0, 0)
+Converted["_Y"].Size = UDim2.new(0.300000012, 0, 1, 0)
+Converted["_Y"].Name = "Y"
+Converted["_Y"].Parent = Converted["_Frame"]
+
+Converted["_hoveronY"].Font = Enum.Font.Roboto
+Converted["_hoveronY"].Text = "Y"
+Converted["_hoveronY"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_hoveronY"].TextScaled = true
+Converted["_hoveronY"].TextSize = 14
+Converted["_hoveronY"].TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_hoveronY"].TextStrokeTransparency = 0.699999988079071
+Converted["_hoveronY"].TextWrapped = true
+Converted["_hoveronY"].BackgroundColor3 = Color3.fromRGB(55.000004321336746, 55.000004321336746, 55.000004321336746)
+Converted["_hoveronY"].BackgroundTransparency = 1
+Converted["_hoveronY"].BorderMode = Enum.BorderMode.Middle
+Converted["_hoveronY"].Position = UDim2.new(0.31039086, 0, -0.828000486, 0)
+Converted["_hoveronY"].Size = UDim2.new(0, 20, 0, 20)
+Converted["_hoveronY"].Visible = false
+Converted["_hoveronY"].Name = "hoveronY"
+Converted["_hoveronY"].Parent = Converted["_Y"]
+
+Converted["_Z"].Font = Enum.Font.Unknown
+Converted["_Z"].Text = "Z"
+Converted["_Z"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Z"].TextScaled = true
+Converted["_Z"].TextSize = 14
+Converted["_Z"].TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Z"].TextWrapped = true
+Converted["_Z"].BackgroundColor3 = Color3.fromRGB(55.000004321336746, 55.000004321336746, 55.000004321336746)
+Converted["_Z"].BorderMode = Enum.BorderMode.Middle
+Converted["_Z"].Position = UDim2.new(0.698674142, 0, 0, 0)
+Converted["_Z"].Size = UDim2.new(0.300000012, 0, 1, 0)
+Converted["_Z"].Name = "Z"
+Converted["_Z"].Parent = Converted["_Frame"]
+
+Converted["_hoveronZ"].Font = Enum.Font.Roboto
+Converted["_hoveronZ"].Text = "Z"
+Converted["_hoveronZ"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_hoveronZ"].TextScaled = true
+Converted["_hoveronZ"].TextSize = 14
+Converted["_hoveronZ"].TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_hoveronZ"].TextStrokeTransparency = 0.699999988079071
+Converted["_hoveronZ"].TextWrapped = true
+Converted["_hoveronZ"].BackgroundColor3 = Color3.fromRGB(55.000004321336746, 55.000004321336746, 55.000004321336746)
+Converted["_hoveronZ"].BackgroundTransparency = 1
+Converted["_hoveronZ"].BorderMode = Enum.BorderMode.Middle
+Converted["_hoveronZ"].Position = UDim2.new(0.302057594, 0, -0.828000486, 0)
+Converted["_hoveronZ"].Size = UDim2.new(0, 20, 0, 20)
+Converted["_hoveronZ"].Visible = false
+Converted["_hoveronZ"].Name = "hoveronZ"
+Converted["_hoveronZ"].Parent = Converted["_Z"]
+
+Converted["_Shadow"].Image = "rbxassetid://186491278"
+Converted["_Shadow"].ImageTransparency = 0.3500000238418579
+Converted["_Shadow"].ScaleType = Enum.ScaleType.Slice
+Converted["_Shadow"].SliceCenter = Rect.new(48, 48, 48, 48)
+Converted["_Shadow"].AnchorPoint = Vector2.new(0.5, 0.5)
+Converted["_Shadow"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Shadow"].BackgroundTransparency = 1
+Converted["_Shadow"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Shadow"].BorderSizePixel = 0
+Converted["_Shadow"].Position = UDim2.new(0.5, 0, 0.5, 0)
+Converted["_Shadow"].Size = UDim2.new(1, 25, 1, 25)
+Converted["_Shadow"].ZIndex = -9999
+Converted["_Shadow"].Name = "Shadow"
+Converted["_Shadow"].Parent = Converted["_Frame"]
+
+Converted["_Vers"].Font = Enum.Font.SourceSansItalic
+Converted["_Vers"].Text = "Version - 4.2.1 (fe18a90)"
+Converted["_Vers"].TextColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Vers"].TextSize = 14
+Converted["_Vers"].TextWrapped = true
+Converted["_Vers"].TextXAlignment = Enum.TextXAlignment.Left
+Converted["_Vers"].BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Converted["_Vers"].BackgroundTransparency = 1
+Converted["_Vers"].BorderColor3 = Color3.fromRGB(0, 0, 0)
+Converted["_Vers"].BorderSizePixel = 0
+Converted["_Vers"].Position = UDim2.new(0.0189999994, 0, 0.971698105, 0)
+Converted["_Vers"].Size = UDim2.new(0.222222224, 0, 0.0283018872, 0)
+Converted["_Vers"].Name = "Vers"
+Converted["_Vers"].Parent = Converted["_PlayerPosition"]
+
+Converted["_PlayerPosition"].Parent = game.CoreGui
+
+local fake_module_scripts = {}
+
+local function NJMMH_fake_script() -- Fake Script: Workspace.PlayerPosition.Frame.X.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_X"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.hoveronX.Visible = true
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.hoveronX.Visible = false
+	end)
+end
+local function WCQMTOT_fake_script() -- Fake Script: Workspace.PlayerPosition.Frame.X.hoveronX.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_hoveronX"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	script.Parent.MouseEnter:Connect(function()
+		
+	end)
+end
+local function DNUNLOB_fake_script() -- Fake Script: Workspace.PlayerPosition.Frame.Y.hoveronY.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_hoveronY"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	script.Parent.MouseEnter:Connect(function()
+		
+	end)
+end
+local function NBDVUOW_fake_script() -- Fake Script: Workspace.PlayerPosition.Frame.Y.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_Y"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.hoveronY.Visible = true
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.hoveronY.Visible = false
+	end)
+end
+local function GZYG_fake_script() -- Fake Script: Workspace.PlayerPosition.Frame.Z.hoveronZ.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_hoveronZ"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	script.Parent.MouseEnter:Connect(function()
+		
+	end)
+end
+local function JZFIU_fake_script() -- Fake Script: Workspace.PlayerPosition.Frame.Z.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_Z"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.hoveronZ.Visible = true
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.hoveronZ.Visible = false
+	end)
+end
+local function ZWJDD_fake_script() -- Fake Script: Workspace.PlayerPosition.Frame.LocalScript
+    local script = Instance.new("LocalScript")
+    script.Name = "LocalScript"
+    script.Parent = Converted["_Frame"]
+    local req = require
+    local require = function(obj)
+        local fake = fake_module_scripts[obj]
+        if fake then
+            return fake()
+        end
+        return req(obj)
+    end
+
+	local X,Y,Z = script.Parent.X, script.Parent.Y, script.Parent.Z
+	
+	local function round(val)
+		return math.floor( (val * 10^2) + 0.5) / (10^2)
+	end
+	
+	while true do
+		local character = game.Players.LocalPlayer.Character
+		if character then
+			local humanoidRootPart = character:FindFirstChild("HumanoidRootPart")
+			if humanoidRootPart then
+				X.Text = round(humanoidRootPart.Position.X)
+				Y.Text = round(humanoidRootPart.Position.Y)
+				Z.Text = round(humanoidRootPart.Position.Z)
+			end
+		end
+		wait()
+	end
+	
+end
+
+coroutine.wrap(NJMMH_fake_script)()
+coroutine.wrap(WCQMTOT_fake_script)()
+coroutine.wrap(DNUNLOB_fake_script)()
+coroutine.wrap(NBDVUOW_fake_script)()
+coroutine.wrap(GZYG_fake_script)()
+coroutine.wrap(JZFIU_fake_script)()
+coroutine.wrap(ZWJDD_fake_script)()
